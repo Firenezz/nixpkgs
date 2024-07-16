@@ -56,6 +56,10 @@ let
       flavor = "AAVMF";
       archDir = "AARCH64";
     };
+    riscv64 = {
+      projectDscPath = "OvmfPkg/RiscVVirt/RiscVVirtQemu.dsc";
+      fwPrefix = "RISCV_VIRT";
+    };
   };
 
   cpuName = stdenv.hostPlatform.parsed.cpu.name;
